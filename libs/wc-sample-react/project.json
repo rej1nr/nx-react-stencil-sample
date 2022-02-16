@@ -1,0 +1,23 @@
+{
+  "root": "libs/wc-sample-react",
+  "sourceRoot": "libs/wc-sample-react/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/wc-sample-react/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/wc-sample-react"],
+      "options": {
+        "jestConfig": "libs/wc-sample-react/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "projects": {
+    "sample": "apps/sample",
+    "sample-e2e": "apps/sample-e2e",
+    "wc-sample": "libs/wc-sample",
+    "wc-sample-react": "libs/wc-sample-react"
+  }
+}
