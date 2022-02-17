@@ -1,0 +1,8 @@
+{
+  "name": "@rejinr/wc-sample-react",
+  "version": "0.0.1",
+  "dependencies": {
+    "@rejin/wc-sample": "file:../wc-sample"
+  },
+  "bundledDependencies": ["@rejin/wc-sample"]
+}

@@ -11,6 +11,26 @@
         "lintFilePatterns": ["libs/wc-sample-react/**/*.{ts,tsx,js,jsx}"]
       }
     },
+    "build": {
+      "executor": "@nrwl/web:rollup",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/wc-sample-react",
+        "tsConfig": "libs/wc-sample-react/tsconfig.lib.json",
+        "project": "libs/wc-sample-react/package.json",
+        "entryFile": "libs/wc-sample-react/src/index.ts",
+        "external": ["react/jsx-runtime"],
+        "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+        "compiler": "babel",
+        "assets": [
+          {
+            "glob": "libs/wc-sample-react/README.md",
+            "input": ".",
+            "output": "."
+          }
+        ]
+      }
+    },
     "test": {
       "executor": "@nrwl/jest:jest",
       "outputs": ["coverage/libs/wc-sample-react"],
